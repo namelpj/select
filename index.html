@@ -1,0 +1,1019 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>本市过户</title>
+    <link rel="stylesheet" href="css/lpcom.css">
+    <link rel="stylesheet" href="css/personal.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/css/public.css">
+
+    <link rel="stylesheet" type="text/css" href="js/lib/css/mobileSelect.css">
+    <script src="js/lib/js/mobileSelect.js" type="text/javascript"></script>
+    <style>
+
+        #trigger1,#trigger2,#trigger3{
+            font-size: 1.3rem;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 6px;
+            border: 1px solid #c5c5c5;
+        }
+
+    </style>
+
+</head>
+<body>
+<form method="post" action="" class="cityTransfer">
+
+    <!--顶栏 B-->
+    <div class="header header-index">
+
+        <a href="index.html" class="back"><i></i></a>
+        <a class="logo" href="index.html"></a>
+        <a class="tel-call-top" href="tel:4008756066"></a>
+    </div>
+
+    <!--顶栏 E-->
+
+
+
+    <!--支付订单 B-->
+    <div class="dk">
+        <p>本市过户<a href="###" >我的订单</a></p>
+    </div>
+    <!--支付订单 E-->
+
+    <div class="bm-top-zone">
+        <img src="images/topbanner1.jpg" alt="" />
+    </div>
+    <div class="instructions">
+        <p>
+            <b>说明：</b>服务费为斑马车务收取，工本费为车辆管理部门收取，均有相应的收据或发票：斑马车务承诺，明码标价，绝无任何隐性收费。
+        </p>
+    </div>
+
+
+    <!-- tab选择  B-->
+    <div class="tabSwitch">
+        <a href="#">
+            车务办理
+        </a>
+        <a class="a2" href="#">
+            所需手续
+        </a>
+        <a href="#">
+            注意事项
+        </a>
+    </div>
+    <!-- tab选择  E-->
+
+
+    <!-- 车务办理信息 B-->
+    <div class="carMeg con" style="display: block">
+        <div class="xia">
+            <dl>
+                <dt><b>*</b>车牌属地：</dt>
+                <dd class="select_two">
+                    <div id="trigger1">车牌属地</div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt><b>*</b>汽车排量：</dt>
+                <dd class="select_one">
+                    <select class="select_one" name="" id="">
+                        <option value="1">汽车排量</option>
+                        <option value="1">1.2L以下（不含）</option>
+                        <option value="2">1.2L-1.9L</option>
+                        <option value="3">2..0L-2.9L</option>
+                        <option value="4">3.0L-3.9L</option>
+                        <option value="5">4.0L-4.9L</option>
+                        <option value="6">5.0L-6.0L</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl>
+                <dt><b>*</b>办理日期：</dt>
+                <dd  class="select_two">
+                    <div id="trigger2">办理日期</div>
+                </dd>
+            </dl>
+            <dl>
+                <dt><b>*</b>买方姓名：</dt>
+                <dd><input type="text" placeholder="请输入买方姓名"/></dd>
+            </dl>
+
+            <dl>
+                <dt><b>*</b>买方手机：</dt>
+                <dd><input type="text" placeholder="请输入买方手机号码"/>
+                    <p><input class="carPhone_lastinput1" type="text" placeholder="请输入验证码"/>
+                        <input class="carPhone_lastinput2" type="button" value="发送验证码" /></p>
+                </dd>
+
+            </dl>
+
+            <dl>
+                <dt><b>*</b>联系地址：</dt>
+                <dd class="select_three">
+                    <div id="trigger3">地址三级联动</div>
+                    <p style="position: static"><input style="z-index: 1"  type="text" placeholder="请输入收件地址"/></p>
+                </dd>
+            </dl>
+        </div>
+
+
+        <div class="choice">
+            <div class="choice_car">
+                <p><b>*</b>车主是否到现场参与办理？</p>
+                <dl id="tag-no-service" onclick="SelectDriveService(1)">
+                    <dt><i class="i1"></i></dt>
+                    <dd>是：车主自行驾车到现场参与办理。</dd>
+                </dl>
+                <dl id="tag-need-service" onclick="SelectDriveService(0)">
+                    <dt><i></i></dt>
+                    <dd>否：由斑马车务司机代驾，上门取送车。</dd>
+                </dl>
+            </div>
+            <div class="tip">
+                <ul>
+                    <li>·请查看并核对所需手续及办理注意事项</li>
+                    <li>·需车辆到场，办理当天车辆不要限号</li>
+                    <li>·办理当天车辆需先处理完毕所有违章</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="fir"><img src="images/half.jpg" alt=""/></div>
+        <div class="foot">
+            <p>服务费：<span>299.00</span></p>
+            <p>工本费：<span>450.00</span></p>
+            <p>代驾费：<span>200.00</span></p>
+            <p class="last_p">合计<b>949.00</b></p>
+
+            <button id="submit" type="button"  class="submit_button" >立即办理</button>
+        </div>
+    </div>
+    <!-- 车务办理信息 E-->
+
+
+
+    <div class="meg con">
+        <div class="meg_up">
+            <dl>
+                <dt>1、</dt>
+                <dd>行驶证原件</dd>
+            </dl>
+            <dl>
+                <dt>2、</dt>
+                <dd>登记证原件（大绿本）</dd>
+            </dl>
+            <dl>
+                <dt>3、</dt>
+                <dd>买方购车指标2张</dd>
+            </dl>
+            <dl>
+                <dt>4、</dt>
+                <dd>购车发票原件（如有过户记录携带过户票原件）</dd>
+            </dl>
+            <dl>
+                <dt>5、</dt>
+                <dd>买卖双方身份证原件，及复印件各2张</dd>
+            </dl>
+            <dl>
+                <dt>6、</dt>
+                <dd>买方非京籍需提供有效期内暂住证或居住卡原件，及复印件2张</dd>
+            </dl>
+            <dl>
+                <dt>7、</dt>
+                <dd>已办理三证合一的企业需营业执照副本和公章</dd>
+            </dl>
+            <dl>
+                <dt>8、</dt>
+                <dd>未办理三证合一的企业需组织机构代码证副本和公章</dd>
+            </dl>
+        </div>
+
+        <div class="meg_down">
+            <dl>
+                <dt>快递地址</dt>
+                <dd>收件人：斑马车务</dd>
+                <dd>联系电话：400-875-6066</dd>
+                <dd>邮寄地址：北京市朝阳区建国路93号万达广场8号楼1509</dd>
+                <dd>邮政编码：100022</dd>
+            </dl>
+
+            <ul class="tip">
+                <li>·快递费用：快递费用由发件方承担，到付我方无法签收。</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="meg con">
+        <div class="meg_up">
+            <dl>
+                <dt>1、</dt>
+                <dd>车辆需到场，办理当天车辆不要限号</dd>
+            </dl>
+            <dl>
+                <dt>2、</dt>
+                <dd>办理业务前需先处理完毕车辆的所有违章</dd>
+            </dl>
+            <dl>
+                <dt>3、</dt>
+                <dd>因车辆问题产生的额外费用需车主自行承担并单独支付</dd>
+            </dl>
+            <dl>
+                <dt>4、</dt>
+                <dd>车辆购买方如无法到现场，需要车管所与购车人远程视频确认</dd>
+            </dl>
+            <dl>
+                <dt>5、</dt>
+                <dd>请核对办理本市过户所需原车主证件以及车辆证件、新车主证件</dd>
+            </dl>
+            <dl>
+                <dt>6、</dt>
+                <dd>原车主可选择由我方代驾到现场，代驾范围限北京5环内，其他城市地区需车主驾车到现场</dd>
+            </dl>
+            <dl>
+                <dt>7、</dt>
+                <dd>已支付的订单，客服确认无法办理后，会在3个工作日之内无条件全额退款</dd>
+            </dl>
+        </div>
+    </div>
+
+
+
+
+    <div class="tanchuang" style="display: none">
+        <div class="tanchuang_box clearfix">
+            <span></span>
+            <img src="images/youhui_main.png" alt="领取优惠"/>
+            <div class="tanchuang_button clearfix">
+                <a href="###">
+                    <img class="youhui_button" src="images/youhui_button.png" alt="确定"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/cityTransfer.js"></script>
+<!--<script src="js/tip.js"></script>-->
+
+<script>
+    $(".choice_car dl .i1").addClass("choiced");
+    function SelectDriveService(type) {
+        if (type == 0) {
+            $("#tag-no-service").find("i").removeClass("choiced");
+            $("#tag-need-service").find("i").addClass("choiced");
+        }
+        else {
+            $("#tag-need-service").find("i").removeClass("choiced");
+            $("#tag-no-service").find("i").addClass("choiced");
+        }
+    }
+</script>
+<script>
+    $(function(){
+        $("#submit").on("click",function(){
+            $.fn.alert({
+                'tip': '请您先选择汽车排量！'
+            });
+        })
+    })
+</script>
+
+<script type="text/javascript">
+
+
+    var mobileSelect1 = new MobileSelect({
+        trigger: '#trigger1',
+        title: '地区选择',
+        wheels: [
+            {data:[
+                {
+                    id:'1',
+                    value:'附近',
+                    childs:[
+                        {
+                            id:'1',
+                            value:'1000米',
+                            childs:[
+                                {id:'1',value:'新浪'},
+                                {id:'2',value:'百度'},
+                                {id:'3',value:'淘宝'},
+                                {id:'4',value:'京东'},
+                                {id:'5',value:'阿里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音乐'},
+                                {id:'8',value:'百度'},
+                                {id:'9',value:'腾讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新浪'},
+                                {id:'12',value:'百度'},
+                                {id:'13',value:'淘宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿里'},
+                                {id:'16',value:'网易'},
+                                {id:'17',value:'音乐'},
+                                {id:'18',value:'百度'},
+                                {id:'19',value:'腾讯'},
+                                {id:'20',value:'qq'}
+                            ]
+                        },
+                        { id:'2',
+                            value:'2000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿asd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sad度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]},
+                        {id:'3',
+                            value:'3000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘d宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿sd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sdfd度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百sd度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]},
+                        {id:'4',
+                            value:'4000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘d宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿sd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sdfd度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百sd度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]},
+                        {id:'5',
+                            value:'5000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘d宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿sd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sdfd度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百sd度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]}
+                    ]
+                },
+                {
+                    id:'2',
+                    value:'上城区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]
+                },
+                {id:'3',
+                    value:'weq城区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]},
+                {id:'4',
+                    value:'dfds城区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]},
+                {id:'5',
+                    value:'上dfsf区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]},
+                {id:'6',value:'西湖区'}
+            ]}
+        ]
+
+    });
+
+    var mobileSelect2 = new MobileSelect({
+        trigger: '#trigger2',
+        title: '地区选择',
+        wheels: [
+            {data:[
+                {
+                    id:'1',
+                    value:'附近',
+                    childs:[
+                        {
+                            id:'1',
+                            value:'1000米',
+                            childs:[
+                                {id:'1',value:'新浪'},
+                                {id:'2',value:'百度'},
+                                {id:'3',value:'淘宝'},
+                                {id:'4',value:'京东'},
+                                {id:'5',value:'阿里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音乐'},
+                                {id:'8',value:'百度'},
+                                {id:'9',value:'腾讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新浪'},
+                                {id:'12',value:'百度'},
+                                {id:'13',value:'淘宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿里'},
+                                {id:'16',value:'网易'},
+                                {id:'17',value:'音乐'},
+                                {id:'18',value:'百度'},
+                                {id:'19',value:'腾讯'},
+                                {id:'20',value:'qq'}
+                            ]
+                        },
+                        { id:'2',
+                            value:'2000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿asd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sad度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]},
+                        {id:'3',
+                            value:'3000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘d宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿sd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sdfd度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百sd度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]},
+                        {id:'4',
+                            value:'4000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘d宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿sd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sdfd度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百sd度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]},
+                        {id:'5',
+                            value:'5000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘d宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿sd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sdfd度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百sd度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]}
+                    ]
+                },
+                {
+                    id:'2',
+                    value:'上城区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]
+                },
+                {id:'3',
+                    value:'weq城区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]},
+                {id:'4',
+                    value:'dfds城区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]},
+                {id:'5',
+                    value:'上dfsf区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]},
+                {id:'6',value:'西湖区'}
+            ]}
+        ]
+
+    });
+
+    var mobileSelect3 = new MobileSelect({
+        trigger: '#trigger3',
+        title: '地区选择',
+        wheels: [
+            {data:[
+                {
+                    id:'1',
+                    value:'附近',
+                    childs:[
+                        {
+                            id:'1',
+                            value:'1000米',
+                            childs:[
+                                {id:'1',value:'新浪'},
+                                {id:'2',value:'百度'},
+                                {id:'3',value:'淘宝'},
+                                {id:'4',value:'京东'},
+                                {id:'5',value:'阿里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音乐'},
+                                {id:'8',value:'百度'},
+                                {id:'9',value:'腾讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新浪'},
+                                {id:'12',value:'百度'},
+                                {id:'13',value:'淘宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿里'},
+                                {id:'16',value:'网易'},
+                                {id:'17',value:'音乐'},
+                                {id:'18',value:'百度'},
+                                {id:'19',value:'腾讯'},
+                                {id:'20',value:'qq'}
+                            ]
+                        },
+                        { id:'2',
+                            value:'2000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿asd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sad度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]},
+                        {id:'3',
+                            value:'3000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘d宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿sd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sdfd度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百sd度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]},
+                        {id:'4',
+                            value:'4000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘d宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿sd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sdfd度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百sd度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]},
+                        {id:'5',
+                            value:'5000米',
+                            childs:[
+                                {id:'1',value:'sd新浪'},
+                                {id:'2',value:'sad百度'},
+                                {id:'3',value:'淘d宝'},
+                                {id:'4',value:'s京东'},
+                                {id:'5',value:'阿sd里'},
+                                {id:'6',value:'网易'},
+                                {id:'7',value:'音sad乐'},
+                                {id:'8',value:'百sdfd度'},
+                                {id:'9',value:'腾sd讯'},
+                                {id:'10',value:'qq'},
+                                {id:'11',value:'新dfs浪'},
+                                {id:'12',value:'百sd度'},
+                                {id:'13',value:'淘sda宝'},
+                                {id:'14',value:'京东'},
+                                {id:'15',value:'阿sd里'},
+                                {id:'16',value:'网a易'},
+                                {id:'17',value:'音sd乐'},
+                                {id:'18',value:'百as度'},
+                                {id:'19',value:'腾a讯'},
+                                {id:'20',value:'qq'}
+                            ]}
+                    ]
+                },
+                {
+                    id:'2',
+                    value:'上城区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]
+                },
+                {id:'3',
+                    value:'weq城区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]},
+                {id:'4',
+                    value:'dfds城区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]},
+                {id:'5',
+                    value:'上dfsf区',
+                    childs:[
+                        {id:'1',value:'新浪'},
+                        {id:'2',value:'百度'},
+                        {id:'3',value:'淘宝'},
+                        {id:'4',value:'京东'},
+                        {id:'5',value:'阿里'},
+                        {id:'6',value:'网易'},
+                        {id:'7',value:'音乐'},
+                        {id:'8',value:'百度'},
+                        {id:'9',value:'腾讯'},
+                        {id:'10',value:'qq'},
+                        {id:'11',value:'新浪'},
+                        {id:'12',value:'百度'},
+                        {id:'13',value:'淘宝'},
+                        {id:'14',value:'京东'},
+                        {id:'15',value:'阿里'},
+                        {id:'16',value:'网易'},
+                        {id:'17',value:'音乐'},
+                        {id:'18',value:'百度'},
+                        {id:'19',value:'腾讯'},
+                        {id:'20',value:'qq'}
+                    ]},
+                {id:'6',value:'西湖区'}
+            ]}
+        ]
+
+    });
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
